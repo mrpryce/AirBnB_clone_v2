@@ -114,8 +114,8 @@ class HBNBCommand(cmd.Cmd):
         """ Overrides the emptyline method of CMD """
         pass
 
-    def do_create(self, args):
-         """Creates a new instance of a Model"""
+    def do_create(self, arg):
+        """Creates a new instance of a Model"""
         if arg:
             try:
                 args = arg.split()
